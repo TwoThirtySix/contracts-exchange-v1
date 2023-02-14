@@ -9,10 +9,15 @@ import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "dotenv/config";
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require("dotenv").config();
+
 task("accounts", "Prints the list of accounts", async (_args, hre) => {
   const accounts = await hre.ethers.getSigners();
   accounts.forEach(async (account) => console.info(account.address));
 });
+
+const { INFURA_API_KEY, MAINNET_PRIVATE_KEY, GOERLI_PRIVATE_KEY, ETHERSCAN } = process.env;
 
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
@@ -25,6 +30,17 @@ const config: HardhatUserConfig = {
         interval: 50000,
       },
       gasPrice: "auto",
+    },
+    goerli: {
+      url: `https://goerli.infura.io/v3/${INFURA_API_KEY}`,
+      accounts: [`${GOERLI_PRIVATE_KEY}`],
+      //  gasPrice: 8000000000,
+      //  gasLimit: 2100000
+    },
+    mainnet: {
+      gasPrice: "auto",
+      url: `https://mainnet.infura.io/v3/${INFURA_API_KEY}`,
+      accounts: [`${MAINNET_PRIVATE_KEY}`],
     },
   },
   etherscan: {

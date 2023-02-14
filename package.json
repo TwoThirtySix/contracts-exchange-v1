@@ -1,6 +1,6 @@
 {
   "name": "@looksrare/contracts-exchange-v1",
-  "version": "1.4.1",
+  "version": "1.3.0",
   "description": "LooksRare exchange smart contracts (v1)",
   "author": "LooksRare",
   "license": "MIT",
@@ -42,6 +42,7 @@
     "test:gas": "REPORT_GAS=true hardhat test",
     "test:forge": "forge test",
     "test:coverage": "hardhat coverage && hardhat compile --force",
+    "remix": "npx remixd -s . --remix-ide https://remix.ethereum.org",
     "release": "release-it"
   },
   "devDependencies": {
@@ -58,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "chai": "^4.2.0",
-    "dotenv": "^10.0.0",
+    "dotenv": "^16.0.3",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
@@ -83,6 +84,7 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "4.4.2"
+    "@openzeppelin/contracts": "4.4.2",
+    "remixd": "^0.2.4"
   }
 }

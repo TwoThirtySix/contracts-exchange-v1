@@ -1,0 +1,21 @@
+{
+  "deployer": "0xdcA03d57e5eC959FC6E2BcB41819778149BfC13b",
+  "weth": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+  "currencyManager": "0x29f2C133BBAe7AC5D25bfE58cBefA18101F21AC4",
+  "executionManager": "0x1056285aCd58742E9E10bC428D32e2AF84B1Ae75",
+  "strategyAnyItemFromCollectionForFixedPrice": "0x8AD6F197017984e72574Be175bAF2085d5aB07d3",
+  "strategyAnyItemInASetForFixedPrice": "0xD5D6834FB1D1f2DE3f39E00Bedd89D933c5fa333",
+  "strategyDutchAuction": "0xBFe20827af461eD0cE5D36A26E551BEFA79b2eAF",
+  "strategyPrivateSale": "0x5d11eaad8Ae9b7Db238380f3bE179502953FFa5b",
+  "strategyStandardSaleForFixedPrice": "0x5a8551F8AbaeDA3cc43E945B31eF5B18064fFf8b",
+  "royaltyFeeRegistry": "0xc21eEa6C4adcc142fE7988b7dFc58Fa7B9fE155e",
+  "royaltyFeeSetter": "0xbc2595e88F27a07B3146CD7c8a608E244a03beEe",
+  "royaltyFeeManager": "0x59245600cbCc5990d68aF9eCE863149583697469",
+  "looksRareExchange": "0x1e196CCb77138f85389da6704e0577cF67f435D7",
+  "transferManagerERC721": "0x3715B62fa19745CE4430BBf22f7cA3f636892554",
+  "transferManagerERC1155": "0x5B53698A073B026503DF63012eBbc66Bc215dFE7",
+  "transferManagerNonCompliantERC721": "0xF43448a0816bBbc8F7B9621E4b344753aA682Fb3",
+  "transferSelectorNFT": "0x51e2124A122ca7A615B57cE6174D2223d39eDBD5",
+  "timestamp": 1669846586870,
+  "complete": true
+}
